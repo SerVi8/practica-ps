@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASS }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USER }}/sv-univalle:latest .
+        run: docker build -t ${{ secrets.DOCKER_USER }}/frontend-ps:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USER }}/sv-univalle:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/frontend-ps:latest
